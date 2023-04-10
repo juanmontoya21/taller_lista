@@ -1,6 +1,13 @@
 departamentos_Colombia = []
 cantidad_Departamentos =int(input("ingrese la cantidad de departamentos: "))
+contador=1
 
-for cantidad_Departamentos in departamentos_Colombia:
-  ingresar_Departamento = input("ingrese los departamentos: ")
+while contador <= cantidad_Departamentos:
+  ingresar_departamentos=input("ingrese los departamentos: ")
+  departamentos_Colombia.append(ingresar_departamentos)
+  contador+=1
+desc=sorted(departamentos_Colombia,reverse=True)
+print(desc)
+print(departamentos_Colombia[-1])
+print(departamentos_Colombia[-2])
   

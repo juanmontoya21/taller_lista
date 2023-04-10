@@ -4,17 +4,17 @@ centinela = ""
 
 
 while centinela != "si":
-  nombre_ususario=input("ingrese su nombre: ")
+  nombre_usuario=input("ingrese su nombre: ")
   telefono=input("ingrese su numero telefonico: ")
-  usuarios[nombre_ususario]=telefono
+  usuarios[nombre_usuario]=telefono
   centinela = input("desea salir si o no?: ")
 
-print(usuarios.keys())
-print(nombre_ususario)
+print(usuarios)
 
-nombre_ususario=input("ingrese su la clave: ")
-if nombre_ususario  == usuarios.keys():
-  print(usuarios[telefono])
+clave_usuario=input("ingrese su la clave: ")
+
+if clave_usuario == usuarios.keys():
+  print(usuarios[nombre_usuario], "hola")
 else:
   print("la clave es incorrecta")
 
