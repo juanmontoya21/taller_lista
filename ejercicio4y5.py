@@ -1,7 +1,5 @@
 usuarios={}
-
 centinela = ""
-
 
 while centinela != "si":
   nombre_usuario=input("ingrese su nombre: ")
@@ -11,13 +9,7 @@ while centinela != "si":
 
 print(usuarios)
 
-clave_usuario=input("ingrese su la clave: ")
-
-if clave_usuario == usuarios.keys():
-  print(usuarios[nombre_usuario], "hola")
-else:
-  print("la clave es incorrecta")
-
-
-
-
+clave_usuario=input("ingrese su clave: ")
+for clave in usuarios.keys():
+  if clave_usuario == clave:
+    print(usuarios[clave_usuario])
