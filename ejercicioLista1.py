@@ -6,6 +6,7 @@ lista_colores = ["rojo","azul","verde","amarillo"]
 
 #el segundo error esta en imprimir la posicion de lo que contiene la lista o el indice a indicar no se escribe con () se corrige a []
 lista_colores = ["rojo","azul" "verde","amarillo"]
+print(lista_colores)
 
   #ERROR
     #print(lista_colores(0))

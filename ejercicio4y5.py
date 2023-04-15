@@ -3,8 +3,8 @@ centinela = ""
 
 while centinela != "si":
   nombre_usuario=input("ingrese su nombre: ")
-  telefono=input("ingrese su numero telefonico: ")
   if nombre_usuario not in usuarios:
+    telefono=input("ingrese su numero telefonico: ")
     usuarios[nombre_usuario]=telefono
   else:
     print("el nombre esta repetido")
