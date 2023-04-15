@@ -4,7 +4,10 @@ centinela = ""
 while centinela != "si":
   nombre_usuario=input("ingrese su nombre: ")
   telefono=input("ingrese su numero telefonico: ")
-  usuarios[nombre_usuario]=telefono
+  if nombre_usuario not in usuarios:
+    usuarios[nombre_usuario]=telefono
+  else:
+    print("el nombre esta repetido")
   centinela = input("desea salir si o no?: ")
 
 print(usuarios)
